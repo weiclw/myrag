@@ -1,0 +1,12 @@
+# Please refers to following url for detailed explanation:
+https://bert-as-service.readthedocs.io/en/latest/section/get-start.html
+
+# Install bert server and client
+pip install -U bert-serving-server bert-serving-client
+
+# Download model data
+curl -o /tmp/model_data.zip https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+
+# Unpack the data
+# This will create a dir /tmp/uncased_L-12_H-768_A-12/
+unzip /tmp/model_data.zip -d /tmp
